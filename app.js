@@ -9,7 +9,7 @@ const user = require('./routes/user')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-port = process.env.PORT || 4000
+const port = process.env.PORT || 4000
 
 app.get('/',(req,res)=>{
   res.status(200).json({
